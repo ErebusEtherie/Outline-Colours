@@ -16,7 +16,8 @@ mod.update_colours_in_settings = function(self, instance)
 	instance.MinionOutlineExtension.smart_tagged_enemy.color = get_colour_array("smart_tagged_enemy")
 	instance.MinionOutlineExtension.smart_tagged_enemy_passive.color = get_colour_array("smart_tagged_enemy_passive")
 	instance.MinionOutlineExtension.veteran_smart_tag.color = get_colour_array("veteran_smart_tag")
-	--instance.MinionOutlineExtension.psyker_marked_target.color = get_colour_array("psyker_marked_target")
+	instance.MinionOutlineExtension.psyker_marked_target.color = get_colour_array("psyker_marked_target")
+	instance.MinionOutlineExtension.psyker_marked_target.material_layers = {"minion_outline", "minion_outline_reversed_depth"}
 
 	instance.PlayerUnitOutlineExtension.default_both_always.color = get_colour_array("player_outline")
 	instance.PlayerUnitOutlineExtension.default_outlines_always.color = get_colour_array("player_outline")
@@ -29,7 +30,7 @@ mod.update_colours_in_settings = function(self, instance)
 	instance.MinionOutlineExtension.smart_tagged_enemy.priority = mod:get("smart_tagged_enemy_priority")
 	instance.MinionOutlineExtension.smart_tagged_enemy_passive.priority = mod:get("smart_tagged_enemy_passive_priority")
 	instance.MinionOutlineExtension.veteran_smart_tag.priority = mod:get("veteran_smart_tag_priority")
-	--instance.MinionOutlineExtension.psyker_marked_target.priority = mod:get("psyker_marked_target_priority")
+	instance.MinionOutlineExtension.psyker_marked_target.priority = mod:get("psyker_marked_target_priority")
 
 	instance.PlayerUnitOutlineExtension.default_both_always.priority = mod:get("player_outline_priority")
 	instance.PlayerUnitOutlineExtension.default_outlines_always.priority = mod:get("player_outline_priority")
